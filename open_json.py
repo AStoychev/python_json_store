@@ -1,8 +1,10 @@
 # Open single JSON file filter unnecessary keys and add id
 import json
 
-with open('paste the file path', 'r') as openfile:
+with open('paste the folder path separate by \\', 'r') as openfile:
     json_object = json.load(openfile)
+
+
 
 # feet = (json_object['properties']["feet"])
 # meters = (json_object['properties']["meters"])
@@ -33,5 +35,5 @@ for i in json_object["features"]:
     del i["properties"]["marker-symbol"]
     json_data = json.dumps(i["properties"], indent=4)
 
-    with open("peaks_data", "a") as outfile:
+    with open("peaks_data_json", "a") as outfile:
         outfile.write(json_data)
