@@ -1,7 +1,7 @@
 # Open single JSON file filter unnecessary keys and add id
 import json
 
-with open('paste the folder path separate by \\', 'r') as openfile:
+with open('C:\\Users\\Atanas\\Desktop\\python_json_store\\data\\africa.geojson', 'r') as openfile:
     json_object = json.load(openfile)
 
 

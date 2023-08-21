@@ -2,7 +2,7 @@
 import json
 import os
 
-base_dir = 'paste the folder path separate by \\'
+base_dir = 'C:\\Users\\Atanas\\Desktop\\python_json_store\\data\\all_continents'
 output = []
 
 for file in os.listdir(base_dir):
@@ -10,8 +10,6 @@ for file in os.listdir(base_dir):
     # if '_index.geojson' not in file:
     with open(f'{base_dir}\\{file}', 'r') as open_file:
         json_object = json.load(open_file)
-
-        json_file = json.dumps(json_object, indent=4)
 
         for i in json_object["features"]:
             if i["properties"]["feet"] >= 6561.68:
