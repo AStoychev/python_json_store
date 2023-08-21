@@ -2,7 +2,7 @@
 import json
 import os
 
-base_dir = 'C:\\Users\\Atanas\\Desktop\\python_json_store\\data\\all_continents'
+base_dir = 'paste the folder path separate by \\'
 output = []
 
 for file in os.listdir(base_dir):
